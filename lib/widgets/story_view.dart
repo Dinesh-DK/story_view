@@ -406,6 +406,7 @@ class StoryView extends StatefulWidget {
   final StoryController controller;
 
   StoryView({
+    Key? key,
     required this.storyItems,
     required this.controller,
     this.onComplete,
@@ -414,7 +415,7 @@ class StoryView extends StatefulWidget {
     this.repeat = false,
     this.inline = false,
     this.onVerticalSwipeComplete,
-  });
+  }) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
